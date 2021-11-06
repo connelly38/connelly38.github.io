@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grapher</title>
+    <link rel="stylesheet" href="grapher.css">
+</head>
+<body>
+<input type="file" id="gload" name="load..." accept=".csv">
+<br>
+    <canvas id="leftcanvas" width=100 height=500></canvas>
+    <canvas id="topcanvas" width=1200 height=500>
+        Sorry. Your browser does not support HTML5 canvas element.
+    </canvas>
+	<canvas id="rightcanvas" width=200 height=500></canvas>
+<input type="range" min="1" max="40" value="1" class="vslider1" id="vscale">
+<input type="range" min="0" max="99" value="1" class="vslider2" id="vwindow">
+<br>
+<canvas id="bottomcanvas" width=1500 height=50></canvas>
+<br>
+<div class="slidecontainer">
+    <input type="range" min="1" max="40" value="1" class="slider" id="hscale">
+<br>
+    <input type="range" min="0" max="99" value="1" class="slider" id="window">
+</div>
+<br>
+<div id="results">
+</div>
+<br>
+</body>
+
+<script src="grapher.js"></script>
+</html>
